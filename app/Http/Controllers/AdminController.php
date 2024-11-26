@@ -54,8 +54,10 @@ class AdminController extends Controller
     }
 
     // Form Edit Berita
-    public function editNews(News $news)
+    public function editNews($id)
     {
+        $news = News::findOrFail($id);
+        // dd($news);
         return view('admin.news.edit', compact('news'));
     }
 
@@ -66,14 +68,19 @@ class AdminController extends Controller
             'title' => 'required|string|max:255',
             'content' => 'required|string',
             'image' => 'nullable|image',
-            'published_at' => 'required|date',
+            // 'published_at' => 'nullable|date',
+
         ]);
+
+        // $data['published_at'] = $data['published_at'] ?? now();
 
         if ($request->hasFile('image')) {
             $data['image'] = $request->file('image')->store('images', 'public');
         }
-
+        
         $news->update($data);
+        
+        // dd($news);
         return redirect()->route('admin.news.index')->with('success', 'Berita berhasil diperbarui.');
     }
 

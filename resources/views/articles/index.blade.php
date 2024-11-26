@@ -14,7 +14,7 @@
                 <div class="card-body">
                     <h5 class="card-title" style="font-size: 20px; font-weight: bold;">{{ $article->title }}</h5>
                     <p class="text-muted" style="font-size: 12px;">Dipublikasikan pada: {{ $article->published_at->format('d M Y') }}</p>
-                    <a href="{{ route('articles.show', $article->id) }}" class="btn btn-primary" style="font-size: 14px;">Baca Selengkapnya</a>
+                    <a href="{{ route('articles.show', $article->id) }}" class="btn btn-primary" style="font-size: 14px; background-color: #D71314">Baca Selengkapnya</a>
                 </div>
             </div>
         </div>

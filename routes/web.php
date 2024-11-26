@@ -30,6 +30,7 @@ Route::get('/admin', [AdminController::class, 'dashboard'])->name('admin.dashboa
 
     // CRUD Berita
     Route::get('/admin/news', [AdminController::class, 'indexNews'])->name('admin.news.index');
+    Route::get('/admin/news/create', [AdminController::class, 'createNews'])->name('admin.createNews');
     Route::get('/admin/news/create', [AdminController::class, 'createNews'])->name('admin.news.create');
     Route::post('/admin/news', [AdminController::class, 'storeNews'])->name('admin.news.store');
     Route::get('/admin/news/{news}/edit', [AdminController::class, 'editNews'])->name('admin.news.edit');

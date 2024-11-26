@@ -25,7 +25,13 @@
             <input type="file" class="form-control" id="image" name="image">
         </div>
 
+        <div class="mb-3">
+            <label for="imageSebelumnya" class="form-label">Gambar Sebelumnya :</label>
+            <img src="{{ asset('storage/' . $news->image) }}" class="img-fluid" 
+                 alt="" style="height: 200px; object-fit: cover; border-radius: 15px;">
+        </div>
         <button type="submit" class="btn btn-success">Simpan Perubahan</button>
+        <a href="{{'admin.news.index'}}"> <button class="btn btn-primary">Back</button></a>
     </form>
 </div>
 @endsection

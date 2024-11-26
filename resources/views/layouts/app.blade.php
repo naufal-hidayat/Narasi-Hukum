@@ -7,28 +7,32 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <style>
+        /* Style existing code */
         body {
             background-color: #f8f9fa;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
-        
+    
         main {
             flex: 1;
         }
-        
+    
         .navbar {
             background-color: #D71314;
         }
+    
         .navbar-brand, .nav-link {
             color: #fff !important;
             font-weight: bold;
+            transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
         }
+    
         .navbar-brand {
             font-weight: bold;
         }
-        
+    
         footer {
             background-color: #D71314;
             color: #fff;
@@ -38,17 +42,27 @@
             width: 100%;
             bottom: 0;
         }
+    
         .nav-item {
             margin: 3px 10px; /* Jarak antar item navbar */
         }
-    </style>
+    
+        /* Hover effect for nav-link */
+        .nav-link:hover {
+            color: #D71314 !important; /* Change text color to the same red as navbar background */
+            background-color: #fff !important; /* Set background color to white */
+            border-radius: 5px; /* Rounded edges for smoother look */
+            padding: 5px 10px; /* Add padding to create a button-like appearance */
+        }
+    </style>    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="{{ asset('storage/images/logo NH.png') }}" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                <img src="{{ asset('storage/images/logo.png') }}" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
