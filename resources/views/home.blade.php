@@ -28,7 +28,7 @@
                 </div>
             </a>
             @endforeach
-        </div>
+        </div>        
 
         <!-- Kolom Kanan: Carousel Headline -->
         <div class="col-md-8">
@@ -83,6 +83,26 @@
 @endsection
 
 <style>
+    /* Tambahkan shadow dan efek hover untuk kolom artikel terbaru */
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 10px;
+        overflow: hidden; /* Untuk mencegah elemen dalam card keluar */
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+        border-radius: 10px 0 0 10px; /* Menyesuaikan gambar di sisi kiri */
+    }
+
+    .card-body {
+        padding: 10px; /* Menambah jarak di dalam card */
+    }
+    
     /* CSS untuk efek overlay headline */
     .headline-overlay {
         border-radius: 15px;
