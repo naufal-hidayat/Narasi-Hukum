@@ -10,7 +10,7 @@
 
             <p style="color: #555;">Jika Anda memiliki pertanyaan atau membutuhkan klarifikasi, jangan ragu untuk menghubungi kami melalui form di bawah ini.</p>
             <ul class="list-unstyled">
-                <li>🔹 Konsultasi Gratis</li>
+                <li>🔹 Konsultasi Terpercaya</li>
                 <li>🔹 Respon Cepat</li>
                 <li>🔹 Profesional di Bidangnya</li>
             </ul>
@@ -32,12 +32,12 @@
                             <form method="POST" action="{{ route('consultation.store') }}">
                                 @csrf
                                 <div class="mb-3">
-                                    <label for="name" class="form-label">Nama</label>
+                                    <label for="name" class="form-label">Nama Lengkap</label>
                                     <input type="text" class="form-control" id="name" name="name" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email aktif" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="question" class="form-label">Pertanyaan</label>
@@ -51,7 +51,7 @@
             </div>
 
             <!-- Tombol Chat WhatsApp -->
-            <a href="https://wa.me/6281394713563" target="_blank" class="btn btn-success w-100 mt-3">Chat Ke WhatsApp</a>
+            <a href="https://wa.me/6289676948053" target="_blank" class="btn btn-success w-100 mt-3">Chat Ke WhatsApp</a>
         </div>
     </div>
 </div>

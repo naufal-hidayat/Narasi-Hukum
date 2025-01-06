@@ -20,7 +20,7 @@ class ConsultationAnswered extends Mailable
     public function build()
     {
         return $this->view('emails.consultation_answered')
-                    ->from('no-reply@narasihukum.com', 'Tim Konsultasi Anda')  // Ganti alamat dengan no-reply
+                    ->from('no-reply@narasihukum.id', 'Tim Konsultasi NarasiHukum')  // Ganti alamat dengan no-reply
                     ->subject('Pertanyaan Anda Sudah Dijawab')
                     ->with('data', $this->data);
     }
