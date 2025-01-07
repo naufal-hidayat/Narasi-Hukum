@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="container mt-5">
-    <h2 class="mb-4" style="font-weight: bold; color: #D71314;">Berita Terbaru</h2>
+    <h2 class="mb-4" style="font-weight: bold; color: #D71314;">Berita Terkini</h2>
 
     @foreach($news as $newsItem)
     <div class="card mb-4 shadow-sm border-0 news-card" style="transition: transform 0.3s ease; border-radius: 10px;">
