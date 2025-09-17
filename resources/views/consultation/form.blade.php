@@ -10,9 +10,9 @@
 
             <p style="color: #555;">Jika Anda memiliki pertanyaan atau membutuhkan klarifikasi, jangan ragu untuk menghubungi kami melalui form di bawah ini.</p>
             <ul class="list-unstyled">
-                <li>🔹 Konsultasi Terpercaya</li>
-                <li>🔹 Respon Cepat</li>
-                <li>🔹 Profesional di Bidangnya</li>
+                <li>🔹 Konsultasi Terpercaya 🔹</li>
+                <li>🔹 Respon Cepat 🔹</li>
+                <li>🔹 Profesional di Bidangnya 🔹</li>
             </ul>
 
             <!-- Tombol untuk Menampilkan Modal -->
